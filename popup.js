@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const selectTag = document.querySelectorAll("select");
 
-    const apiKey = "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";
+    const apiKey = "My-API Key";
     const apiUrl = "https://api.openai.com/v1/completions";
 
 
@@ -29,8 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
     translateBtn.addEventListener('click', () => handleTask('Translate'));
     summarizeBtn.addEventListener('click', () => handleTask('Summarize'));
     detailingBtn.addEventListener('click', () => handleTask('Detailing'));
-
-    //const apiKey2 = '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';
 
     function UpdateChatbox(sender, text) {
         var messageSender = document.createElement("div");
