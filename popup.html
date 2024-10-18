@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TORE Extension</title>
+    <script src="popup.js"></script>
+    <script src="countries.js"></script>
+</head>
+
+
+<style>
+    .first {
+        background-color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        font-family: "Lexend";
+        color: #091747;
+        position: fixed;
+        top: 20px;
+        width: 298px;
+        height: 30px;
+        padding: 7px;
+        border-radius: 5px;
+        padding-bottom: 1.5px;
+        display: inline-flex;
+    }
+    
+    .main {
+        background-color: #ffffff;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Lexend";
+        color: #091747;
+        position: absolute;
+        top: 70px;
+        width: 298px;
+        height: 420px;
+        padding: 7px;
+        border-radius: 5px;
+    }
+    
+    body {
+        width: 310px;
+        height: 500px;
+        background-color: #5974B2;
+    }
+    
+    button {
+        background-color: #a3cbf1;
+        border-radius: 21px;
+        color: black;
+        text-align: center;
+        font-size: 13px;
+        width: 84px;
+        height: 23px;
+        font-family: "Lexend";
+    }
+
+    #chatbox {
+        width: 250px;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        font-family: "Lexend";
+    }
+
+    #user-input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-top: 1px solid #ccc;
+        box-sizing: border-box;
+        font-family: "Lexend";
+    }
+
+    #chat-messages {
+        height: 240px;
+        padding: 10px;
+        overflow-y: auto;
+        background-color: #fff;
+        font-family: "Lexend";
+    }
+    img {
+        text-align: left;
+    }
+    
+    .text_header {
+        padding-left: 50px;
+    }
+
+    .control {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        padding: 5px 20px 0px 100px;
+    }
+    
+    .control .row select {
+        font-size: 16px;
+        background: none;
+        font-family: "Lexend";
+        border-radius: 21px;
+        align-items: center;
+    }
+</style>
+
+<body>
+
+    <div class="first">
+        <img src="images/Item_top.png" width="30px">
+        <div class="text_header">TORE Extension</div>
+    </div>
+    <div id="title" class="header">
+        <div class="main">
+            <div class="button">
+                <button id="translateBtn">Translate</button>
+                <button id="detailingBtn">Detailing</button>
+                <button id="summarizeBtn">Summarize</button>
+            </div>
+
+            <ul class="control">
+                <!-- <li class="row from">
+                    <select>
+                        
+                    </select>
+                </li>
+                <img src="images/exchange.png" width="20px"> -->
+                <li class="row to">
+                    <select></select>
+                </li>
+            </ul>
+
+            <div id="chatbox">
+                <div id="chat-messages"></div>
+                <input type="text" id="user-input" placeholder="Type your message...">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
